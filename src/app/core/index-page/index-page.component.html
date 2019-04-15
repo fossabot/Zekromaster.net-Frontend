@@ -1,0 +1,6 @@
+<h2> This index page is temporary!</h2>
+<div *ngIf="pages">
+  <div *ngFor="let page of pages">
+    <a [href]="page._id"> {{ page.title }} </a>: {{ page.description }}
+  </div>
+</div>
