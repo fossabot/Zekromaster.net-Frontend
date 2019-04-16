@@ -24,6 +24,9 @@ export class GamelistPageComponent implements OnInit {
 
 
   ngOnInit() {
+    this.data.games.sort(
+      (a, b)=>a.name > b.name ? 1 : -1
+    )
   }
 
   getProofList(game: game): string {
