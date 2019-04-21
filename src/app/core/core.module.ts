@@ -14,7 +14,7 @@ import { IndexPageComponent } from './index-page/index-page.component';
   exports: [
     ZekTitleComponent,
     NotFoundComponent,
-    IndexPageComponent
+    IndexPageComponent,
   ]
 })
 export class CoreModule { }

@@ -1,4 +1,6 @@
-<h2> This index page is temporary!</h2>
+<div style="text-align: center">
+  <h2> This index page is temporary!</h2>
+</div>
 <div *ngIf="pages">
   <div *ngFor="let page of pages">
     <a [routerLink]="page._id"> {{ page.title }} </a>: {{ page.description }}
