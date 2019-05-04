@@ -16,7 +16,6 @@ export class PageManagerComponent implements OnInit {
     private route: ActivatedRoute,
     private pgGet: PageGetterService,
     private router: Router,
-    private sanitizer: DomSanitizer
   ) {
     this.route.params.subscribe(
       (params) => {

@@ -1,5 +1,4 @@
 <div *ngIf="page">
   <zek-blog-post-page *ngIf="typeIs('BLOG_POST')" [data]="page.data"></zek-blog-post-page>
-  <zek-table-page *ngIf="typeIs('TABLE')" [data]="page.data"></zek-table-page>
   <zek-game-list *ngIf="typeIs('GAME_LIST')" [data]="page.data"></zek-game-list>
 </div>

@@ -1,1 +1,34 @@
-<zek-table-page [data]="getTable()"></zek-table-page>
+<div [innerHTML]="data.pre"></div>
+<br>
+<table>
+  <tr>
+    <th>
+      Name
+    </th>
+    <th>
+      Console
+    </th>
+    <th>
+      %
+    </th>
+    <th>
+      Proof
+    </th>
+  </tr>
+  <tr *ngFor="let game of data.games">
+    <td>
+      {{game.name}}
+    </td>
+    <td>
+      {{game.console}}
+    </td>
+    <td>
+      {{game.completion}}
+    </td>
+    <td>
+      <zek-proof-component [type]="game.proof.type" [proof]="game.proof.proof" [game]="game.name"></zek-proof-component>
+    </td>
+  </tr>
+</table>
+<br>
+<div [innerHTML]="data.post"></div>
