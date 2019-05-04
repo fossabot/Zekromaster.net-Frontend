@@ -7,6 +7,7 @@ import { PageManagerComponent } from './page-manager/page-manager.component';
 import { BlogPostPageComponent } from './blog-post-page/blog-post-page.component';
 import { GamelistPageComponent } from './gamelist-page/gamelist-page.component';
 import { ProofComponentComponent } from './gamelist-page/proof-component/proof-component.component';
+import { OptimageModule } from '../optimage/optimage.module';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { ProofComponentComponent } from './gamelist-page/proof-component/proof-c
   imports: [
     CommonModule,
     HttpClientModule,
-    ModalModule
+    ModalModule,
+    OptimageModule
   ],
   exports: [
     PageManagerComponent

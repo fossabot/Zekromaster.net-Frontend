@@ -15,7 +15,8 @@ export class ProofComponentComponent implements OnInit {
   @Input() proof: string;
   @Input() game: string;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

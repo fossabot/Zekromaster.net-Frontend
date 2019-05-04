@@ -9,7 +9,7 @@ import { IndexPageComponent } from './index-page/index-page.component';
   declarations: [ZekTitleComponent, NotFoundComponent, IndexPageComponent],
   imports: [
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   exports: [
     ZekTitleComponent,
