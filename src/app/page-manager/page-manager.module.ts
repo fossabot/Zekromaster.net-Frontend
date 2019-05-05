@@ -8,10 +8,11 @@ import { BlogPostPageComponent } from './blog-post-page/blog-post-page.component
 import { GamelistPageComponent } from './gamelist-page/gamelist-page.component';
 import { ProofComponentComponent } from './gamelist-page/proof-component/proof-component.component';
 import { OptimageModule } from '../optimage/optimage.module';
+import { GameNameComponent } from './gamelist-page/game-name/game-name.component';
 
 
 @NgModule({
-  declarations: [PageManagerComponent, BlogPostPageComponent, GamelistPageComponent, ProofComponentComponent],
+  declarations: [PageManagerComponent, BlogPostPageComponent, GamelistPageComponent, ProofComponentComponent, GameNameComponent],
   imports: [
     CommonModule,
     HttpClientModule,

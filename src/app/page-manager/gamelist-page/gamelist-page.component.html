@@ -17,7 +17,7 @@
   </tr>
   <tr *ngFor="let game of data.games">
     <td>
-      {{game.name}}
+      <zek-game-name [name]="game.name" [url]="game.url"></zek-game-name>
     </td>
     <td>
       {{game.console}}
