@@ -1,0 +1,7 @@
+<ng-container *ngIf="url; then thenTemplate; else elseTemplate"></ng-container>
+<ng-template #elseTemplate>
+  {{ name }}
+</ng-template>
+<ng-template #thenTemplate>
+  <a [href]="url" target="_blank"> {{ name }} </a>
+</ng-template>
