@@ -13,7 +13,6 @@ export class GameNameComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.url);
   }
 
 }
