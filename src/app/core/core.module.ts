@@ -4,9 +4,10 @@ import { ZekTitleComponent } from './zek-title/zek-title.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { NotFoundComponent } from './notfound/notfound.component';
 import { IndexPageComponent } from './index-page/index-page.component';
+import { HomeButtonComponent } from './home-button/home-button.component';
 
 @NgModule({
-  declarations: [ZekTitleComponent, NotFoundComponent, IndexPageComponent],
+  declarations: [ZekTitleComponent, NotFoundComponent, IndexPageComponent, HomeButtonComponent],
   imports: [
     CommonModule,
     AppRoutingModule,
@@ -15,6 +16,7 @@ import { IndexPageComponent } from './index-page/index-page.component';
     ZekTitleComponent,
     NotFoundComponent,
     IndexPageComponent,
+    HomeButtonComponent
   ]
 })
 export class CoreModule { }
