@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Howl } from 'howler';
+import { MusicPlayerService } from './services/music-player.service';
 
 @Component({
   selector: 'app-root',
@@ -9,14 +9,14 @@ import { Howl } from 'howler';
 })
 export class AppComponent implements OnInit {
   title = 'Zekromaster.net';
-  sound = new Howl({src: 'assets/floral_shoppe.mp3'})
 
   constructor(
-    private router: Router
+    private router: Router,
+    private player: MusicPlayerService
   ){};
 
   ngOnInit(): void {
-    this.sound.play();
+    this.player.setDefaultBgm();
   }
 
   get isHome(): boolean {
