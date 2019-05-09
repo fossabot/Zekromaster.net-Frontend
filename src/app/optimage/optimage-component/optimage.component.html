@@ -1,6 +1,6 @@
-<div *ngIf="image; else loading">
-  <img style="max-width: 100%" [src]="image">
-</div>
+<ng-container *ngIf="image; else loading">
+  <img [style]="imgStyle" [src]="image">
+</ng-container>
 <ng-template #loading>
-  <b>Currently loading</b>
+  <div *ngIf="!loadless"><b>Currently loading</b></div>
 </ng-template>

@@ -1,7 +1,6 @@
-<ng-container *ngIf="url; then thenTemplate; else elseTemplate"></ng-container>
-<ng-template #elseTemplate>
-  {{ name }}
-</ng-template>
-<ng-template #thenTemplate>
-  <a [href]="url" target="_blank"> {{ name }} </a>
-</ng-template>
+<ng-container *ngIf="url">
+  <a [href]="url" target="_blank">
+    <zek-optimage imgStyle="height: 1em; width: auto;" imageID="info_icon" loadless="true"></zek-optimage>
+  </a>
+</ng-container>
+{{ name }}
