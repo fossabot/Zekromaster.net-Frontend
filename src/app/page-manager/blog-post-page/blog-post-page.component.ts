@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { MarkdownConverterService } from './markdown-converter.service';
+import { MarkdownConverterService } from '../markdown-converter.service';
 
 @Component({
   selector: 'zek-blog-post-page',

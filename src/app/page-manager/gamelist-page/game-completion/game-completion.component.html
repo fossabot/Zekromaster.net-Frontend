@@ -1,0 +1,17 @@
+<modal #modal closeOnOutsideClick="true">
+  <ng-template #modalHeader>
+    <h2>Completion Rules</h2>
+  </ng-template>
+  <ng-template #modalBody>
+    <div [innerHTML]="completionRulesHTML"></div>
+  </ng-template>
+  <ng-template #modalFooter></ng-template>
+</modal>
+
+
+<ng-container *ngIf="completionRulesHTML">
+  <a (click)="modal.open()">
+    <zek-optimage imgStyle="height: 1em; width: auto;" imageID="info_icon" loadless="true"></zek-optimage>
+  </a>
+</ng-container>
+{{ quantity }}

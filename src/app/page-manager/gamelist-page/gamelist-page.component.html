@@ -23,7 +23,7 @@
       {{game.console}}
     </td>
     <td>
-      {{game.completion}}
+      <zek-game-completion [quantity]="game.completion.qt" [completionRules]="game.completion.specs"></zek-game-completion>
     </td>
     <td>
       <zek-proof-component [type]="game.proof.type" [proof]="game.proof.proof" [game]="game.name"></zek-proof-component>
